@@ -1,0 +1,28 @@
+<HTML>
+  <HEAD>
+     <TITLE>Append Child</TITLE>  
+     <SCRIPT>
+        function append()
+         {
+             var fruit=document.getElementById("fruits");
+             var colddrink=document.getElementById("colddrinks").firstChild;
+             fruit.appendChild(colddrink);
+         }
+     </SCRIPT>
+  </HEAD>
+  <BODY>
+     <H2>Fruits</H2>
+     <OL id="fruits">
+       <LI>Banana</LI>
+       <LI>Mango</LI>
+       <LI>Chickoo</LI>
+      </OL>
+      <H2>Cold Drinks</H2>
+      <OL id="colddrinks">
+        <LI>Pepsi</LI>
+        <LI>Mirinda</LI>
+        <LI>Coke</LI>
+      </OL>
+      <BUTTON onclick="append()">Append</BUTTON>
+  </BODY>
+</HTML>
