@@ -1,0 +1,33 @@
+<HTML>
+  <HEAD>
+    <TITLE>Append Prepend Remove</TITLE>
+    <SCRIPT src="jquery.js"></SCRIPT>
+    <SCRIPT>
+       $(document).ready(function(){
+          $("#b1").click(function(){
+             $("OL").append("<LI>Advance Java</LI>"); 
+          }); 
+          $("#b2").click(function(){
+             $("OL").prepend("<LI>Data Structures</LI>"); 
+          });
+          $("#b3").click(function(){
+             $("OL").remove(); 
+          });
+          $("LI").click(function(){
+             $(this).remove(); 
+          });
+       });  
+    </SCRIPT>
+  </HEAD>
+  <BODY>
+     <OL>
+       <LI>C Programming</LI>
+       <LI>Java Programming</LI>
+       <LI>Responsive Web Design</LI>
+       <LI>Python Programming</LI>
+     </OL>
+     <BUTTON id="b1">Append</BUTTON>
+     <BUTTON id="b2">Prepend</BUTTON>
+     <BUTTON id="b3">Remove</BUTTON>  
+  </BODY>
+</HTML>
