@@ -1,0 +1,28 @@
+<HTML>
+  <HEAD>
+    <TITLE>Animation</TITLE>
+    <STYLE>
+       DIV
+        {
+            height:150px;
+            width:150px;
+            background-color:red;
+        }
+    </STYLE>
+    <SCRIPT src="jquery.js"></SCRIPT>
+    <SCRIPT>
+       $(document).ready(function(){
+          $("BUTTON").click(function(){
+             $("DIV").animate({'width':'500px'});
+             $("DIV").animate({'height':'500px'});
+          }); 
+       });  
+    </SCRIPT>
+  </HEAD>
+  <BODY>
+     <DIV>
+      
+     </DIV><BR>
+     <BUTTON>Animate</BUTTON>
+  </BODY>
+</HTML>
