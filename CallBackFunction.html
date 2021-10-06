@@ -1,0 +1,30 @@
+<HTML>
+  <HEAD>
+    <TITLE>Call Back Function</TITLE>
+    <STYLE>
+       DIV
+        {
+            height:150px;
+            width:150px;
+            background-color:blue;
+        }
+    </STYLE>
+    <SCRIPT src="jquery.js"></SCRIPT>
+    <SCRIPT>
+       $(document).ready(function(){
+          $("BUTTON").click(function(){
+              $("DIV").fadeOut(1500,function(){
+                  alert("Element is fadded");
+              });
+              
+          }); 
+       });  
+    </SCRIPT>
+  </HEAD>
+  <BODY>
+     <DIV>
+      
+     </DIV><BR>
+     <BUTTON>Fade out</BUTTON>
+  </BODY>
+</HTML>
