@@ -1,0 +1,35 @@
+<HTML>
+  <HEAD>
+    <TITLE>Fade Events</TITLE> 
+    <STYLE>
+       DIV
+        {
+            height:150px;
+            width:150px;
+            background-color:green;
+        }
+    </STYLE>
+    <SCRIPT src="jquery.js"></SCRIPT>
+    <SCRIPT>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("DIV").fadeOut(1200);
+            });
+            $("#b2").click(function(){
+               $("DIV").fadeIn(1300); 
+            });
+            $("#b3").click(function(){
+               $("DIV").fadeToggle(1200); 
+            });
+        }); 
+    </SCRIPT>
+  </HEAD>
+  <BODY>
+     <DIV>
+      
+     </DIV><BR>
+     <BUTTON id="b1">Fade Out</BUTTON>
+     <BUTTON id="b2">Fade In</BUTTON>
+     <BUTTON id="b3">Fade Toggle</BUTTON>
+  </BODY>
+</HTML>
