@@ -1,0 +1,27 @@
+<HTML>
+  <HEAD>
+     <TITLE>Document Object Model</TITLE>  
+     <STYLE>
+        #p1
+         {
+             display:none;
+         }
+     </STYLE>
+  </HEAD>
+  <BODY>
+     <p id="p1">Java Programming</p>
+     <p id="p2"></p><BR>
+     <input type="text" name="n" id="n1" value="Hrishikesh"><BR>
+     <input type="text" name="n2" id="n3"><BR>
+     <SCRIPT>
+         var name=document.getElementById("p1").innerHTML;
+         document.write(name);
+         document.getElementById("p2").innerHTML="Responsive web design";
+      
+         var s=document.getElementById("n1").value;
+         document.write(s);
+         
+         document.getElementById("n3").value="Hede";
+     </SCRIPT>
+  </BODY>
+</HTML>
